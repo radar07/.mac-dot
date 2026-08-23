@@ -1,0 +1,51 @@
+[user]
+  name = Pranav RK
+  email = pranavrk7@gmail.com
+	signingkey = 2CD64D94C9C7CA59
+[core]
+  editor = nvim
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+  ui = true;
+  autocrlf = input
+  pager = delta
+[merge]
+  conflictstyle = diff3
+[help]
+  autocorrect = 20
+[delta]
+  navigate = true
+  light = false
+  line-numbers = true
+[diff]
+  colorMoved = default
+[difftool]
+  prompt = true
+[pull]
+  rebase = true
+[init]
+  defaultBranch = main
+[fetch]
+  prune = true
+[rerere]
+  enabled = true
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[log]
+  showSignature = false
+[commit]
+  gpgsign = true
+[aliases]
+  st = status
+  br = branch
+  co = checkout
+  ci = commit
+  cm = commit -m
+  ca = commit --amend
+  ssb = status -sb
+  d = diff
+  dt = difftool

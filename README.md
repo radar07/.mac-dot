@@ -1,3 +1,3 @@
 ```bash
-brew bundle dump --file ~/Brewfile --force
+brew bundle dump --file ~/.Brewfile --force
 ```

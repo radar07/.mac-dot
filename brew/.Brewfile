@@ -6,10 +6,14 @@ brew "btop"
 brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
+# GNU Privacy Guard (OpenPGP)
+brew "gnupg"
 # Post-modern modal text editor
 brew "helix"
 # Git-compatible distributed version control system
 brew "jj"
+# Simple terminal UI for git commands
+brew "lazygit"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Manage multiple Node.js versions

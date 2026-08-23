@@ -1,0 +1,19 @@
+gui:
+  theme:
+    activeBorderColor:
+      - green
+      - bold
+  showIcons: true
+  nerdFontsVersion: "3"
+
+git:
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+  commit:
+    signOff: true
+
+keybinding:
+  universal:
+    quit: 'q'
+    return: '<esc>'
