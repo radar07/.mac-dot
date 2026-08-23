@@ -1,0 +1,26 @@
+"$scheme" = "https://jj-vsc.github.io/jj/prerelease/config-schema.json"
+
+[user]
+name = "Pranav RK"
+email = "pranavrk7@gmail.com"
+
+[signing]
+behavior = "own"
+backend = "gpg"
+key = "2CD64D94C9C7CA59"
+
+[ui]
+diff-formatter = ":git"
+pager = "delta"
+diff-editor = "meld"
+merge-editor = "meld"
+graph.style = "square"
+default-command = "log"
+
+[merge-tools.difft]
+program = "difft"
+diff-args = ["--color-always", "$left", "$right"]
+
+[git]
+auto-local-bookmark = false
+write-change-id-header = true
