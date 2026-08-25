@@ -124,6 +124,7 @@ alias cd="z"
 alias vim="nvim"
 
 ##### Exports #####
+export EDITOR=nvim
 
 export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
