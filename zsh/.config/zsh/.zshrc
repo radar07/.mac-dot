@@ -3,13 +3,29 @@
 # some useful options (man zshoptions)
 setopt autocd menucomplete
 setopt interactive_comments
+setopt appendhistory
+
 stty stop undef  # Disable ctrl-s to freeze terminal.
 zle_highlight=('paste:none')
 
 # beeping is annoying
 unsetopt BEEP
 
-setopt appendhistory
+# load zsh functions
+source "$ZDOTDIR/.zsh-functions"
+
+# Normal files to source
+zsh_add_file "zsh-exports"
+zsh_add_file "zsh-vim-mode"
+zsh_add_file "zsh-aliases"
+zsh_add_file "zsh-prompt"
+
+# Plugins
+zsh_add_plugin "zsh-users/zsh-autosuggestions"
+zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
+zsh_add_plugin "hlissner/zsh-autopair"
+# For more plugins: https://github.com/unixorn/awesome-zsh-plugins
+# More completions https://github.com/zsh-users/zsh-completions
 
 autoload -Uz compinit
 zstyle ':completion:*' menu select
@@ -63,18 +79,6 @@ zle-line-init() {
 zle -N zle-line-init
 echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
-##### Functions #####
-
-# C++ build and run aliases
-function co() {
-  g++ -std=c++20 -O2 -g -o "${1%.*}.out" $1 -Wall;
-}
-
-function run() {
-  co $1 && ./${1%.*}.out & fg;
-}
-
 
 ##### Aliases #####
 
@@ -133,3 +137,4 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 export GPG_TTY=$(tty)
+
