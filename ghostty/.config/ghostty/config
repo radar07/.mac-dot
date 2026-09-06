@@ -1,6 +1,7 @@
 font-family = FiraCode Nerd Font
 
 font-size = 14
+font-thicken = true
 
 font-feature = zero
 font-feature = cv02

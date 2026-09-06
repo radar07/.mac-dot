@@ -38,6 +38,8 @@ brew "zoxide"
 brew "anomalyco/tap/opencode", trusted: true
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace", trusted: true
+# Memory training application
+cask "anki"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 npm "corepack"
