@@ -40,6 +40,7 @@ brew "anomalyco/tap/opencode", trusted: true
 cask "nikitabobko/tap/aerospace", trusted: true
 # Memory training application
 cask "anki"
+cask "font-maple-mono-nf"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 npm "corepack"
