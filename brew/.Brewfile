@@ -43,4 +43,6 @@ cask "anki"
 cask "font-maple-mono-nf"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
+# System monitor for the menu bar
+cask "stats"
 npm "corepack"
