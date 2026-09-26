@@ -16,11 +16,11 @@ mouse-hide-while-typing = true
 
 theme = Kanagawabones
 
-background-opacity = 0.95
+# background-opacity = 0.95
 
-window-theme = "ghostty"
-window-save-state = "always"
-window-decoration = false
+# window-theme = "ghostty"
+# window-save-state = "always"
+# window-decoration = false
 
 shell-integration-features = "cursor,sudo"
 copy-on-select = true
